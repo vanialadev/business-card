@@ -9,7 +9,7 @@ import br.com.vaniala.businesscard.data.BusinessCardRepository
  * on 11/12/21.
  *
  */
-class App: Application() {
+class App : Application() {
     val database by lazy { AppDatabase.getDatabase(this) }
     val repository by lazy { BusinessCardRepository(database.businessDao()) }
 }
